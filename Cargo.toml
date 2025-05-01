@@ -1,0 +1,13 @@
+[package]
+name = "simd-playground"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+criterion = "0.5.1"
+quickcheck = "1.0.3"
+rand = "0.9.1"
+
+[[bench]]
+name = "byte_count"
+harness = false
