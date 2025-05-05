@@ -11,3 +11,7 @@ rand = "0.9.1"
 [[bench]]
 name = "byte_count"
 harness = false
+
+[[bench]]
+name = "nucleotide"
+harness = false
