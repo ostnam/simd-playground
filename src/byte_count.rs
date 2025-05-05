@@ -24,7 +24,7 @@ pub fn count_bytes_x86(
                 2:
                 xor {eql}, {eql}
                 movzx {cur},  byte ptr [{idx}]
-                test {cur}, {tgt}
+                cmp {cur}, {tgt}
                 cmove {eql}, {one}
                 add {res}, {eql}
                 add {idx}, 1
