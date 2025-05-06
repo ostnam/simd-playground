@@ -1,4 +1,5 @@
 #![cfg(target_arch = "x86_64")]
+#![cfg(target_feature = "avx512f")]
 #![feature(portable_simd)]
 #![feature(stdarch_x86_avx512)]
 

@@ -9,6 +9,7 @@ pub fn criterion_benchmark(c: &mut Criterion) {
     c.bench_function("nucleotide asm naive", |b| b.iter(|| nucleotide::count_asm_naive(&buf)));
     c.bench_function("nucleotide std::simd", |b| b.iter(|| nucleotide::count_std_simd(&buf)));
     c.bench_function("nucleotide simd intrinsics", |b| b.iter(|| nucleotide::count_simd_intrinsics(&buf)));
+    c.bench_function("nucleotide simd asm", |b| b.iter(|| nucleotide::count_simd_asm(&buf)));
 }
 
 criterion_group!(benches, criterion_benchmark);
